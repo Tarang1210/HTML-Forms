@@ -1,35 +1,52 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Create Multiple Forms</title>
-  </head>
-  <body>
-    <header>
-      <h2></h2>
-      <!-- image -->
-      <img src="images/header.jpg" alt="Header Image" width="100%" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<body>
+    <!-- Form -->
+    <form action="" method="post">
+        <div>
+            <label for="Email">Email</label><br>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+        </div>
 
-      <form action="" method="post"></form>
-    </header>
+        <!-- Radio Buttons -->
+        <label>Gender :- </label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="other">Other
+        <br>
+        
+        <!-- Checkboxs -->
+        <label>Hobbies :- </label>
+        <input type="checkbox" name="hobbies" value="Reading">Reading
+        <input type="checkbox" name="hobbies" value="Sports">Sports
+        <input type="checkbox" name="hobbies" value="other">Other
+        <br>
 
-    <br />
-    <br />
+        <!-- Dropdown List -->
+        <select name="month_selected">
+            <option>Jan</option>
+            <option>Feb</option>
+            <option selected>Mar</option>
+            <option>Apr</option>
+        </select>
+        
+         <!-- TextArea input -->
+         <p>Message</p>
+         <TextArea name="message" rows="10" cols="30"></TextArea>
 
-    <main>
-      <section>
-        <h3></h3>
-      </section>
-
-      <br />
-      <br />
-
-      <section>
-        <h2></h2>
-
-        <form action="" method="post">
-          <table></table>
-        </form>
-      </section>
-    </main>
-  </body>
+        <div>
+            <input type="submit" value="Login">
+        </div>
+        
+    </form>
+</body>
 </html>
